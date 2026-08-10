@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Modelo 3D - SG1</title>
+    <title>Modelos 3D</title>
 
     <!-- Librería Model Viewer -->
     <script type="module"
@@ -25,6 +25,17 @@
             margin-top: 30px;
         }
 
+        .modelo-seccion {
+            width: 90%;
+            max-width: 1000px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+ 
+        .modelo-seccion h2 {
+            margin-bottom: 10px;
+        }
+
         model-viewer {
             width: 90%;
             height: 70vh;
@@ -36,17 +47,35 @@
 
 <body>
 
-    <h1>Modelo 3D de equipo SG1</h1>
+    <h1>Modelos 3D</h1>
 
-    <model-viewer
-        src="SG1.glb"
-        ios-src="SG1.usdz"
-        alt="SG1 modelo 3D"
-        camera-controls
-        auto-rotate
-        ar
-        ar-modes="webxr scene-viewer quick-look">
-    </model-viewer>
+    <!-- Modelo 1 -->
+    <div class="modelo-seccion">
+        <h2>Equipo SG1</h2>
+        <model-viewer
+            src="SG1.glb"
+            ios-src="SG1.usdz"
+            alt="SG1 modelo 3D"
+            camera-controls
+            auto-rotate
+            ar
+            ar-modes="webxr scene-viewer quick-look">
+        </model-viewer>
+    </div>
+
+    <!-- Modelo 2 -->
+    <div class="modelo-seccion">
+        <h2>Equipo LS-1100</h2>
+        <model-viewer
+            src="LS-1100.glb"
+            ios-src="LS-1100.usdz"
+            alt="Modelo 2"
+            camera-controls
+            auto-rotate
+            ar
+            ar-modes="webxr scene-viewer quick-look">
+        </model-viewer>
+    </div>
 
 </body>
 </html>
